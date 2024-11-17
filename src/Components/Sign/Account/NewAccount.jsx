@@ -22,8 +22,10 @@ function NewAccount() {
         }
 
         if (newPassword !== confirmPassword) {
-            setError('Passwords do not match!');
-        } else {
+            setError('Passwords do not match.');
+            return;
+        } 
+        else {
             setError('');
             console.log('Form submitted:', { email, newPassword });
             alert("You are Successfully Create your account.")

@@ -1,65 +1,45 @@
 import React from 'react';
 import './Login.css';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 function Login() {
-  // const username = document.getElementById('username').value.trim();
-  // const password = document.getElementById('password').value.trim();
-  // const usernameError = document.getElementById('usernameError');
-  // const passwordError = document.getElementById('passwordError');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  // // Reset error messages
-  // usernameError.textContent = '';
-  // passwordError.textContent = '';
-  // usernameError.style.display = 'none';
-  // passwordError.style.display = 'none';
-
-  // let isValid = true;
-
-  // // Username validation
-  // if (username === '') {
-  //   usernameError.textContent = 'Username is required.';
-  //   usernameError.style.display = 'block';
-  //   isValid = false;
-  // }
-
-  // // Password validation
-  // if (password === '') {
-  //   passwordError.textContent = 'Password is required.';
-  //   passwordError.style.display = 'block';
-  //   isValid = false;
-  // } else if (password.length < 6) {
-  //   passwordError.textContent = 'Password must be at least 6 characters long.';
-  //   passwordError.style.display = 'block';
-  //   isValid = false;
-  // }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+    navigate('/');
+  }
 
   // return isValid;
   return (
     <>
       {/* login form */}
       <section id="login-section" class="login-section">
-        <div class="login-container">
+        <div class="login-container"><br /><br />
           <h2>Login to Your Account</h2>
           <p>Welcome back! Please enter your credentials to access your account.</p>
 
           {/* Login Form  */}
-          <form id="loginForm" >
+          <form id="loginForm" onSubmit={handleSubmit}>
             <div class="form-group">
-              <label for="username">Username</label>
-              <input type="text" id="username" name="username" placeholder="Enter your username" required />
-              <small class="error-message" id="usernameError"></small>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your username" required />
             </div>
 
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password" placeholder="Enter your password" required />
-              <small class="error-message" id="passwordError"></small>
+              <input type="password" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password" required />
             </div>
 
             <button type="submit" class="login-button">Login</button>
 
             <div class="form-footer">
-              <p>Don't have an account? <a href="register.html">Register here</a></p>
+              <p>Don't have an account? <Link to="/">Register here</Link></p>
               <p><a href="#">Forgot Password?</a></p>
             </div>
           </form>

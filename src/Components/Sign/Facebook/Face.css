@@ -1,0 +1,62 @@
+.facebook-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 92vh;
+    background-color: #f4f4f9;
+}
+
+.facebook-section > .fcontainer{
+    width: 100%;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(247, 246, 246);
+    border-radius: 5px; */
+}
+.fip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.fip > input{
+    width: 240%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+.fip > input::placeholder{
+    font-size: larger;
+}
+
+
+.fcontainer > form > button{
+    background-color: rgb(253, 250, 251);
+    color: black;
+    border: 1px solid black(192, 47, 76);
+    border-radius: 25px;
+    width: 120px;
+    height: 40px;
+    font-size: larger;
+}
+.fcontainer >form > button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}

@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import {  Route , Routes } from 'react-router-dom';
+import Front from './Components/Main/Content/Front';
+import ContactUs from './Components/Menu/Contact/ContactUs';
+import Signin from './Components/Sign/Signin';
+import Goog from './Components/Sign/Google/Goog';
+import Face from './Components/Sign/Facebook/Face';
+import Mail from './Components/Sign/Email/Mail';
+import NewAccount from './Components/Sign/Account/NewAccount';
+import Login from './Components/Log/Login';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      
+      <>
+        <Routes>
+        <Route path='/' element={<Front />} />
+        <Route path='/contact' element={<ContactUs />} />
+        <Route path="/signin" element={<Signin/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/google" element={<Goog />} />
+        <Route path="/facebook" element={<Face />} />
+        <Route path="/email" element={<Mail />} />
+        <Route path="/newaccount" element={<NewAccount />} />
+        </Routes>
+      </>
     </div>
   );
 }

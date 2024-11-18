@@ -24,11 +24,11 @@ function Last() {
           <div class="footer-section">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">Home</a></li><br />
-              <li><a href="#">About</a></li><br />
-              <br />
-              <li><a href="#">Contact</a></li><br />
-              <li><a href="#">Privacy Policy</a></li>
+              <li><Link to="/">Home</Link></li><br />
+              <li><Link to="/about">About</Link></li><br />
+              
+              <li><Link to="/contact">Contact</Link></li><br />
+              <li><Link to="/">Privacy Policy</Link></li>
             </ul>
           </div>
 

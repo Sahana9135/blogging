@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .background {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('header2.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .heading {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 80px;
+    line-height: 60px;
+    margin-bottom: 80px;
+  }
+
+  .heading .small {
+    display: block;
+    font-size: 40px;
+  }
+
+  .heading .no-fill {
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  /* Explore Posts Section */
+  .explore-posts-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+
+  .explore-posts-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .explore-posts-section p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  /* Category Filter */
+  .category-filter {
+    margin-bottom: 20px;
+  }
+
+  .category-filter button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .category-filter button:hover {
+    background-color: #555;
+  }
+
+  /* Post Grid */
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+
+  /* Post Card */
+  .post-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .post-card a {
+    text-decoration: none;
+  }
+
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .post-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .post-content {
+    padding: 15px;
+  }
+
+  .post-content h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  .post-description {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .post-category {
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  .post-author {
+    font-size: 0.8em;
+    color: #888;
+  }

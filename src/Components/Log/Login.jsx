@@ -28,19 +28,25 @@ function Login() {
           <form id="loginForm" onSubmit={handleSubmit}>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your username" required />
+              <input type="email" name="email" id="email" 
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)} 
+              placeholder="Enter your Email" required />
             </div>
 
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password" required />
+              <input type="password" id="password" name="password" 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              placeholder="Enter your password" required />
             </div>
 
             <button type="submit" class="login-button">Login</button>
 
             <div class="form-footer">
-              <p>Don't have an account? <Link to="/">Register here</Link></p>
-              <p><a href="#">Forgot Password?</a></p>
+              <p>Don't have an account? <Link to="/signin">Register here</Link></p>
+              <p><Link to="/signin">Forgot Password?</Link></p>
             </div>
           </form>
         </div>

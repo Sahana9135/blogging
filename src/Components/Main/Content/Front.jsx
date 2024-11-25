@@ -29,6 +29,7 @@ function Front() {
                 </div>
             </section>
 <br />
+
 <Member />
 
 <Sub />

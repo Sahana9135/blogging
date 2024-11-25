@@ -3,7 +3,7 @@
     text-align: center;
     background: #333;
     color: #fff;
-    padding: 50px 20px;
+    padding: 55px 20px;
 }
 
 .services-header h1 {
@@ -41,8 +41,8 @@
 }
 
 .service-icon img {
-    width: 80px;
-    height: 80px;
+    width: 250px;
+    height: 250px;
     margin-bottom: 15px;
 }
 
@@ -61,8 +61,8 @@
 /* Call to Action Section */
 .cta {
     text-align: center;
-    background: #ffc107;
-    color: #333;
+    background: #313131;
+    color: #f7f3f3;
     padding: 40px 20px;
 }
 
@@ -77,8 +77,8 @@
 }
 
 .cta-button {
-    background: #333;
-    color: #fff;
+    background: #eceaea;
+    color: #0e0d0d;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;

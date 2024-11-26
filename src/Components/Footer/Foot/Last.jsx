@@ -9,25 +9,26 @@ function Last() {
         <div class="footer-container">
 
 
-          {/* <!-- Services Section --> */}
-          <div class="footer-section">
+            {/* Services Section  */}
+           <div class="footer-section">
             <h3>Our Services</h3>
-            <ul>
+             <ul>
               <li><a href="#">Blogging Platform</a></li>
               <li><a href="#">Content Creation Tools</a></li>
               <li><a href="#">Community Support</a></li>
               <li><a href="#">Monetization Options</a></li>
-            </ul>
+            </ul> 
           </div>
 
           {/* <!-- Quick Links Section --> */}
           <div class="footer-section">
             <h3>Quick Links</h3>
             <ul>
-              <li><Link to="/">Home</Link></li><br />
-              <li><Link to="/about">About</Link></li><br />
+            
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
               
-              <li><Link to="/contact">Contact</Link></li><br />
+              <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/">Privacy Policy</Link></li>
             </ul>
           </div>

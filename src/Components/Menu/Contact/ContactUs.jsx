@@ -9,11 +9,11 @@ function ContactUs() {
     Fname: "",
     Lname: "",
     email: "",
-    phone: "",
-    country: "",
-    Reason: "",
-    Hear: "",
-    subject: "",
+    // phone: "",
+    // country: "",
+    // Reason: "",
+    // Hear: "",
+    // subject: "",
     message: "",
   });
 
@@ -52,7 +52,7 @@ function ContactUs() {
           <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange}  pattern="[0-9]{10}" required />
 
           <label htmlFor="country">Country :</label>
-          {/* <!-- All countries -->
+           {/* <!-- All countries -->
                     <!-- Code and Name --> */}
           <select class="form-select" autocomplete="country" id="country" name="country"value={formData.country} onChange={handleChange} required>
             <option value=""></option>
@@ -308,7 +308,7 @@ function ContactUs() {
             <option value="YE">Yemen</option>
             <option value="ZM">Zambia</option>
             <option value="ZW">Zimbabwe</option>
-          </select>
+          </select> 
           {/* <!-- total - 252 --> */}
 
           <label htmlFor="Reason">Contact Reason</label>

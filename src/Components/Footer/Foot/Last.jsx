@@ -13,10 +13,10 @@ function Last() {
            <div class="footer-section">
             <h3>Our Services</h3>
              <ul>
-              <li><a href="#">Blogging Platform</a></li>
-              <li><a href="#">Content Creation Tools</a></li>
-              <li><a href="#">Community Support</a></li>
-              <li><a href="#">Monetization Options</a></li>
+              <li><Link to="/service">Blogging Platform</Link></li>
+              <li><Link to="/service">Content Creation Tools</Link></li>
+              <li><Link to="/service">Community Support</Link></li>
+              <li><Link to="/service">Monetization Options</Link></li>
             </ul> 
           </div>
 
@@ -25,11 +25,10 @@ function Last() {
             <h3>Quick Links</h3>
             <ul>
             
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              
-              <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/">Privacy Policy</Link></li>
+              <li><Link to="/">Home</Link></li><br />
+              <li><Link to="/about">About</Link></li><br />
+              <li><Link to="/contact">Contact</Link></li><br />
+              <li><Link to="/">Privacy Policy</Link></li><br />
             </ul>
           </div>
 

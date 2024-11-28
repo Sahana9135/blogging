@@ -1,7 +1,7 @@
 import React from 'react';
 import './Login.css';
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 
 function Login() {
@@ -15,13 +15,13 @@ function Login() {
     navigate('/');
   }
 
-  // return isValid;
+  
   return (
     <>
-      {/* login form */}
+     
       <section id="login-section" class="login-section">
         <div class="login-container"><br /><br />
-          <h2>Login to Your Account</h2>
+          <h2>Login into Your Account </h2>
           <p>Welcome back! Please enter your credentials to access your account.</p>
 
           {/* Login Form  */}
@@ -39,11 +39,11 @@ function Login() {
               <input type="password" id="password" name="password" 
               value={password} 
               onChange={(e) => setPassword(e.target.value)} 
-              placeholder="Enter your password" required />
+              placeholder="Enter  password" required />
             </div>
 
-            <button type="submit" class="login-button">Login</button>
-
+            <button type="submit" class="login-button">Log in</button>
+<br />
             <div class="form-footer">
               <p>Don't have an account? <Link to="/signin">Register here</Link></p>
               <p><Link to="/signin">Forgot Password?</Link></p>

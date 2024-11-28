@@ -9,11 +9,9 @@ function ContactUs() {
     Fname: "",
     Lname: "",
     email: "",
-    // phone: "",
-    // country: "",
-    // Reason: "",
-    // Hear: "",
-    // subject: "",
+    phone: "",
+    country: "",
+    Hear: "",
     message: "",
   });
 
@@ -311,15 +309,6 @@ function ContactUs() {
           </select> 
           {/* <!-- total - 252 --> */}
 
-          <label htmlFor="Reason">Contact Reason</label>
-          <select name="Reason" id="Reason" value={formData.Reason} onChange={handleChange} required>
-            <option value=""></option>
-            <option value="services">Ask for Services</option>
-            <option value="request">Request a Conversation</option>
-            <option value="inquiry">Media Inquiry</option>
-            <option value="job">Carrer Opportunities</option>
-            <option value="other">Other</option>
-          </select>
 
           <label htmlFor="Hear">How did you Know about us ?</label>
           <select name="Hear" id="Hear" value={formData.Hear} onChange={handleChange} >
@@ -332,9 +321,7 @@ function ContactUs() {
             <option value="mouth">Word of Mouth</option>
           </select>
 
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required />
-
+          
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required></textarea>
 

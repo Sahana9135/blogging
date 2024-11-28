@@ -11,15 +11,18 @@ import NewAccount from './Components/Sign/Account/NewAccount';
 import Login from './Components/Log/Login';
 import Aboutus from './Components/Menu/About/Aboutus';
 import Service from './Components/Menu/Services/Service';
+import Blogs from './Components/Menu/Blog/Blogs';
+import Posts from './Components/Menu/Blog/PostDetail';
 
 function App() {
   return (
     <div className="App">
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
       
       <>
         <Routes>
         <Route path='/' element={<Front />} />
+        <Route path='/blog' element={<Blogs/>} />
+        <Route Path="/post/:id" element={<Posts />} />
         <Route path='/about' element={<Aboutus />} />
         <Route path='/contact' element={<ContactUs />} />
         <Route path='/service' element={<Service />} />

@@ -1,9 +1,8 @@
 import React from 'react';
 import './Aboutus.css';
-import Last from '../../Footer/Foot/Last';
-import Team1 from './team1.jpg'
-import Team2 from './team2.jpg'
-import Team3 from './team3.jfif'
+import Team1 from './team1.jpg';
+import Team2 from './team2.jpg';
+import Team3 from './team3.jpg';
 
 function Aboutus() {
   return (
@@ -41,7 +40,7 @@ function Aboutus() {
             <div class="team-member">
                 <img src={Team2} alt="Jane Smith" class="team-img" />
                 <h3>Elsa Bernad</h3>
-                <p>CTO</p>
+                <p>Managing Director</p>
             </div>
             <div class="team-member">
                 <img src={Team3} alt="Mike Brown" class="team-img" />
@@ -51,7 +50,9 @@ function Aboutus() {
         </div>
     </section>
 
-    < Last />
+    <div class="footer-bottom">
+          <p>&copy; 2024 Blogging Platform. All Rights Reserved.</p>
+        </div>
 
     </>
   )

@@ -15,7 +15,7 @@ function Front() {
                 <div className="line"></div>
                 <h1>Blog Create</h1>
                 <br />
-                <Link to="/blog" className="bg-btn1">&nbsp;&nbsp;Create a Blog&nbsp;&nbsp;</Link>
+                <Link to="/create" className="bg-btn1">&nbsp;&nbsp;Create a Blog&nbsp;&nbsp;</Link>
             </div>
 
             {/* Categories Section  */}

@@ -2,8 +2,10 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 function PostDetail() {
-  const { state } = useLocation();
-  const post = state?.post;
+  const location = useLocation();
+console.log(location.state);
+
+  const post = location.state?.post;
 
   if (!post) {
     return <p>Post not found.</p>;

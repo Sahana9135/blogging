@@ -29,7 +29,7 @@ function NewAccount() {
             setError('');
             console.log('Form submitted:', { email, newPassword });
             alert("You are Successfully Create your account.")
-            navigate('/');
+            navigate('/login');
         }
 
     };

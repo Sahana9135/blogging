@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import {React, useState} from 'react';
 import {  Route , Routes } from 'react-router-dom';
 import Front from './Components/Main/Content/Front';
 import ContactUs from './Components/Menu/Contact/ContactUs';
@@ -12,15 +13,20 @@ import Login from './Components/Log/Login';
 import Aboutus from './Components/Menu/About/Aboutus';
 import Service from './Components/Menu/Services/Service';
 import Blogs from './Components/Menu/Blog/Blogs';
+import CreateBlog from './Components/Menu/Blog/CreateBlog';
+import ViewBlog from './Components/Menu/Blog/ViewBlog';
 import Posts from './Components/Menu/Blog/PostDetail';
 
 function App() {
+  const [blog, setBlog] = useState(null);
   return (
     <div className="App">
       
       <>
         <Routes>
         <Route path='/' element={<Front />} />
+        <Route path="/create" element={<CreateBlog setBlog={setBlog} />} />
+        <Route path="/view" element={<ViewBlog blog={blog} />} />
         <Route path='/blog' element={<Blogs/>} />
         <Route Path="/post/:id" element={<Posts />} />
         <Route path='/about' element={<Aboutus />} />

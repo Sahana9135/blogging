@@ -124,7 +124,7 @@ function Blogs() {
       <div className="post-grid">
         {filteredPosts.map((post) => (
           <div className="post-card" key={post.id} data-category={post.category}>
-            <Link to={`/post/${post.id}`} state={{ post }}>
+            <Link to={`/post/${post.id}`} state={{ post }} onClick={() => console.log(post)}>
               <img src={post.image} alt={`${post.category} Post`} />
               <div className="post-content">
                 <h3>{post.title}</h3>
